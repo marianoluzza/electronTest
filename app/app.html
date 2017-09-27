@@ -4,23 +4,51 @@
   <meta charset="utf-8">
   <title>Electron Boilerplate</title>
   <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+  <!-- Insert this line above script imports  -->
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <!-- normal script imports etc 
+  <script src="scripts/vendor.js"></script>    -->
+
 </head>
 <body>
 
   <div class="container">
-    <h1 id="greet"></h1>
-    <p>
-      Welcome to <a href="http://electron.atom.io" class="js-external-link">Electron</a> app running on this magnificent <strong id="os"></strong> machine.
-    </p>
-    <p>
-      App author: <strong id="author"></strong>
-    </p>
-    <p>
-      Environment: <strong id="env"></strong>
-    </p>
-    <p>
-      Electron version: <strong id="electron-version"></strong>
-    </p>
+    <div id="divTest">
+      <h1 id="greet"></h1>
+      <p>
+        Welcome to <a href="http://electron.atom.io" class="js-external-link">Electron</a> app running on this magnificent <strong id="os"></strong> machine.
+      </p>
+      <p>
+        App author: <strong id="author"></strong>
+      </p>
+      <p>
+        Environment: <strong id="env"></strong>
+      </p>
+      <p>
+        Electron version: <strong id="electron-version"></strong>
+      </p>
+      <p>
+        Directorio: <strong id="rutaApp"></strong>
+      </p>
+      <button id="bQuitTest">Empezar</button>
+    </div>
+    <div id="divInit">
+      <p>
+        <ol id="ltaGaleria">
+
+        </ol>
+      </p>
+      <form id="formInit" action="">
+        <labe>C&oacute;digo</labe>
+        <input id="codigo" name="codigo" placeholder="ingrese c&oacute;digo de aplicaci&oacute;n"/>
+        <br/>
+        <button id="bIniciar">Iniciar</button>
+        <button id="bDescargar">Descargar</button>
+        <button id="bPlay">Reproducir</button>
+      </form>
+    </div>
+    <div id="divVideo">
+    </div>
   </div>
 
   <script src="app.js"></script>
